@@ -7,16 +7,16 @@ def sort_pos(list, item):
             break
     return insert_pos
 
-names_list = ["Andrew", "Bob", "Emma", "Michael", "Tomas" ]
+names_list = ["Андрій", "Олександр", "Кирило", "Микола", "Дмитро" ]
 
-print(f"List of names: {names_list}")
+print(f"Останні імена: {names_list}")
 
-name = input("Enter a new name to get a position to insert it: ")
+name = input("Введіть нове ім’я, щоб отримати позицію для його вставлення: ")
 pos = sort_pos(names_list, name)
 
 if pos == 0:
-    print("This name will be inserted first")
+    print("Це ім'я буде вставлено першим")
 elif pos == len(names_list):
-    print("This name will be inserted last")
+    print("Це ім'я буде вставлено останнім")
 else:
-    print(f"This name will be inserted between {names_list[pos - 1]} and {names_list[pos]}.")
+    print(f"Ця назва буде вставлена ​​між {names_list[pos - 1]} і {names_list[pos]}.")
