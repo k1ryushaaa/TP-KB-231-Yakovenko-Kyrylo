@@ -1,11 +1,11 @@
 def enter():
     while True:
-        a = input("To exit the program — print 'ex' \nPrint your number: ")
+        a = input("Вийти з програми - пишіть 'ex' \nНапишіть ваш номер: ")
         if a != "ex":
             try:
                 a = float(a)
             except ValueError:
-                print("It's not a number\n")
+                print("Це не номер\n")
                 continue
             return a
         else:
@@ -13,18 +13,18 @@ def enter():
 
 def operations(a):
     while True:
-        b = str(input("Print your next number or print 'ex' to exit the program: "))
+        b = str(input("Напишіть наступний номер або для того щоб вийти з програми - пишіть 'ex': "))
 
         if b != "ex":
 
             try:
                 b = float(b)
             except ValueError:
-                print("It's not a number")
+                print("Це не номер")
                 continue
             
-            print("\nPS — with values position swap \n'+' — sum, '-' — sub, '!-' — sub (PS), '*' — mult, '/' — div, '!/' — div (PS), '^' — deg, '!^' — deg (PS), or 'ex' to exit the program")
-            action = input("Select an action: ")
+            print("\nPS — PS — зі значеннями зміни позиції \n'+' — сумма, '-' — різниця, '!-' — різниця (PS), '*' — добуток, '/' — ділення, '!/' — ділення (PS), '^' — піднесення в степінь, '!^' — піднесення в степінь (PS), або 'ex' щоб вийти із програми")
+            action = input("Виберіть дію: ")
 
             match action:
                 case "+":
@@ -37,12 +37,12 @@ def operations(a):
                     a *= b
                 case "/":
                     if b == 0:
-                        print("can't be divided by 0, please enter your next number not equal to 0")
+                        print("не ділиться на 0, будь ласка, введіть наступне число, яке не дорівнює 0.")
                     else:
                         a /= b
                 case "!/":
                     if a == 0:
-                        print("can't be divided by 0, now you result equal to 0, try another action")
+                        print("не можна поділити на 0, результат дорівнює 0, спробуйте іншу дію")
                     else:
                         a = b / a
                 case "^":
@@ -50,16 +50,16 @@ def operations(a):
                 case "!^":
                     a = b ** a
                 case "ex":
-                    print("\nyour current result = ", a)
+                    print("\nваш поточний результат = ", a)
                     exit(0)
                 case _:
-                    print("This is not an action")
+                    print("Це не працює")
 
-            print("\nyour current result = ", a)
+            print("\nваш поточний результат = ", a)
 
 
         else:
-            print("your current result = ", a)
+            print("ваш поточний результат = ", a)
             exit(0)
 
 
