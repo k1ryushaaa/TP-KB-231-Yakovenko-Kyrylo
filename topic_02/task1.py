@@ -24,4 +24,4 @@ def find_roots(a, b, c):
 a, b, c = enter()
 d = discriminant(a, b, c)
 print(find_roots(a, b, d))
-input("Натисніть Enter, щоб завершити...")
+input("Натисніть Enter, щоб завершити")
