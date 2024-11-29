@@ -1,4 +1,4 @@
-import requests
+import requests # type: ignore
 
 def print_cur_n():
     for elem in nbu_orig.json():

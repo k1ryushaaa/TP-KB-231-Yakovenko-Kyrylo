@@ -18,7 +18,7 @@ def div(a, b):
 
 def rdiv(a, b):
     if a == 0:
-        return "can't be divided by 0, now you result equal to 0, try another action"
+        return "не можна поділити на 0, тепер результат дорівнює 0, спробуйте іншу дію"
     else:
         return b / a
 
