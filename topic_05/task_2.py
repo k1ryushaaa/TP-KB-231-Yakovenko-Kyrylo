@@ -9,26 +9,26 @@ def print_cur_e():
         print(elem['cc'], " | ", elem['rate'])
 
 def conv():
-    cur_code = (input("Enter currency code: ")).upper()
-    cur_val = float(input("Enter the amount of currency: "))
+    cur_code = (input("Введіть код валюти: ")).upper()
+    cur_val = float(input("Введіть суму валюти: "))
     try:
         total = cur_val * (nbu[cur_code]["rate"])
         print(f"{total} UAH")
     except:
-        print("The currency code is incorrect")
+        print("Неправильно вказано код валюти")
 
 def r_conv():
-    cur_code = (input("Enter currency code: ")).upper()
-    cur_val = float(input("Enter the amount of UAH: "))
+    cur_code = (input("Введіть код валюти: ")).upper()
+    cur_val = float(input("Введіть суму UAH: "))
     try:
         total = cur_val / (nbu[cur_code]["rate"])
         print(f"{total} {cur_code}")
     except:
-        print("The currency code is incorrect")
+        print("Неправильно вказано код валюти")
 
 def action():
     while True:
-        print("\npn — print currency names | pe — print exchange rate | с — conversion | rс — reverse conversion | ex — exit")
+        print("\npn — надрукувати назви валют | pe — роздрукувати курс обміну валют | с — перетворення | rс — зворотне перетворення | ex — вихід із програми")
         q = input("Select an action: ")
         match q:
             case "pn":

@@ -12,7 +12,7 @@ def mult(a, b):
 
 def div(a, b):
     if b == 0:
-        return "can't be divided by 0, please enter your next number not equal to 0"
+        return "не ділиться на 0, будь ласка, введіть наступне число, яке не дорівнює 0."
     else:
         return a / b
 

@@ -1,23 +1,23 @@
 def enter():
     while True:
-        a = input("To exit the program — print 'ex' \nPrint your number: ")
+        a = input("Для виходу із програми — напишіть 'ex' \nНапишіть ваш номер: ")
         if a != "ex":
             try:
                 a = float(a)
             except ValueError:
-                print("It's not a number\n")
+                print("Це не цифра\n")
                 continue
             return a
         else:
             exit(0)
 
 def actions(a):
-    print("\nPS — with values position swap \n'+' — sum, '-' — sub, '!-' — sub (PS), '*' — mult, '/' — div, '!/' — div (PS), '^' — deg, '!^' — deg (PS), or 'ex' to exit the program")
-    action = input("Select an action: ")
+    print("\nPS — з обміном позицій значень \n'+' — сумма, '-' — різниця, '!-' — різниця (PS), '*' — добуток, '/' — ділення, '!/' — ділення (PS), '^' — піднесення в степінь, '!^' — піднесення в степінь (PS), або 'ex' для виходу із програми")
+    action = input("Виберіть дію: ")
     if action == "ex":
-        print("\nyour current result = ", a)
+        print("\nваш поточний результат = ", a)
         exit(0)
     elif action in ["+", "-", "!-", "*", "/", "!/", "^", "!^"]:
         return action
     else:
-        print("This is not an action")
+        print("Це не працює")

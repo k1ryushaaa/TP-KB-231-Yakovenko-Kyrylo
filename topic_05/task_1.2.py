@@ -3,7 +3,7 @@ import random
 def enter():
     while True:
         try:
-            p = int(input("Enter the number that corresponds to your choice \n1 — Stone, 2 — Scissors, 3 — Paper\n"))
+            p = int(input("Введіть номер, який відповідає вашому вибору \n1 — Stone, 2 — Scissors, 3 — Paper\n"))
         except:
             print("\n")
             continue
@@ -25,13 +25,13 @@ def play(p):
             loss(p, comp)
 
 def win(p, comp):
-        print(f"You won! You chose {choice_list[p]}, the computer chose {choice_list[comp]}")
+        print(f"Ти виграв! Ви обрали {choice_list[p]}, комп'ютер вибрав {choice_list[comp]}")
 
 def loss(p, comp):
-        print(f"You lost. You chose {choice_list[p]}, the computer chose {choice_list[comp]}")
+        print(f"Ти програв. Ви обрали {choice_list[p]}, комп'ютер вибрав {choice_list[comp]}")
 
 def draw(p):
-        print(f"Draw. You and computer chose a {choice_list[p]}")
+        print(f"Нічия. Ви з комп'ютером вибрали {choice_list[p]}")
 
 
 choice_list = ["stone", "scissors", "paper"]

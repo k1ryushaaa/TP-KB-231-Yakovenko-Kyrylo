@@ -24,7 +24,7 @@ def calculation(a):
             case "!^":
                 a = rdeg(a, b)
 
-        print("\nyour current result = ", a)
+        print("\nваш поточний результат = ", a)
 
 
 
